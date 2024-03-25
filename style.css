@@ -1,0 +1,65 @@
+.center-element{
+    display: flex;
+    justify-content: center;
+}
+.button-enter{
+    margin-top: 10px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: orange;
+    font-family: 'mainFont';
+    font-size: medium;
+    color: white;
+    cursor: pointer;
+}
+
+.enter-name{
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: transparent;
+    font-family: 'mainFont';
+    font-size: large;
+    color: white;
+}
+.enter-name::placeholder{
+    color: white;
+    text-align: center;
+}
+.enter-name:focus{
+    border: 2px solid white;
+    color: white;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }    
+    to{
+        transform: rotate(360deg);
+    }
+}
+.jupiter{
+    width: 30%;
+    animation: rotate 14s linear infinite;
+}
+.player{
+    position: absolute;
+    width: 140px;
+}
+
+@keyframes rotateBall{
+    from{
+        transform: rotate(0deg) ;
+    }    
+    to{
+        transform: rotate(360deg);
+    }
+}
+.ball{
+    margin-bottom: 650px;
+}
+.rotatesPlanet{
+    animation: rotate 4s linear infinite;
+}

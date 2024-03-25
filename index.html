@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jupiter Shooter</title>
+</head>
+<style>
+    @font-face {
+        font-family: 'mainFont';
+        src: url('CLIENTSIDE-MEDIAFILES/font/KdamThmorPro-Regular.ttf');
+    }
+    body{
+        background-image: url('CLIENTSIDE-MEDIAFILES/img/bg.png');
+        /* background-image: linear-gradient(rgb(49, 0, 141), purple); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'mainFont';
+        height: 100vh;
+    }
+</style>
+<body id="body">
+    <div id="home-page">
+        <div class="center-element" >
+            <div class="wrap-headingg">
+                <h1 style="text-align: center; margin-top: 150px; color: white; font-size: 50px;">Jupiter Hitters</h1>
+                <p style="text-align: center; color: rgb(242, 218, 40); margin-bottom: 40px; margin-top: -40px;">Beat the opponent and qonquer the jupiter</p>
+            </div>
+        </div>
+        <div class="center-element">
+            <input id="inputName" class="enter-name" type="text" placeholder="Enter your name">
+        </div>
+        <div class="center-element">
+            <button class="button-enter" id="startGame">Start Game</button>
+        </div>
+    </div>
+
+    <div id="main-content" style="display: none;">
+        <div class="center-element">
+        <div style="position: absolute; top: 0;">
+            <p style="text-align: center; font-size: 30px; color: peru;">Time</p>
+            <p id="timer" style="text-align: center; font-size: 30px; color: white; margin-top: -30px;">00 : 00 : 00</p>
+        </div>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center; margin-top: 200px;">
+            <h1 style="position: absolute; z-index: 99; color: white; font-size: 250px;" id="countdown3sec">3</h1>
+            <img src="CLIENTSIDE-MEDIAFILES/img/player.png" style="margin-top: -450px; margin-left: 450px; transform: rotate(55deg);" class="player" alt="player">
+            <img src="CLIENTSIDE-MEDIAFILES/img/bot1.png" style="margin-top: -450px; margin-left: -450px; transform: rotate(310deg) scaleX(-1);" class="player" alt="player">
+            <img src="CLIENTSIDE-MEDIAFILES/img/bot2.png" style="margin-top: 450px; margin-left: -450px; transform: rotate(220deg) scaleX(-1);" class="player" alt="player">
+            <img src="CLIENTSIDE-MEDIAFILES/img/bot3.png" style="margin-top: 450px; margin-left: 450px; transform: rotate(310deg) scaleY(-1);" class="player" alt="player">
+            <div class="rotatePlanets" id="rotatingBall" style="display: flex; justify-content: center; align-items: center;">
+                <img class="jupiter" src="CLIENTSIDE-MEDIAFILES/img/jupiter.png" alt="jupiter" style="width: 550px;">
+                <img src="CLIENTSIDE-MEDIAFILES/img/ball.png" alt="ball" style="position: absolute; width: 70px;" class="ball">
+            </div>
+        </div>
+        <!-- <canvas id="mainGame" style="background-image: linear-gradient(rgb(0, 0, 92), purple); width: 100%;"></canvas> -->
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
